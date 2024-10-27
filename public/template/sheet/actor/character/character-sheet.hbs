@@ -1,0 +1,16 @@
+<div class="{{cssClass}} flexcol, sheet-container character-sheet">
+	<form autocomplete="off">
+		<div class="field">
+			Name
+			<input name="name" type="text" value="{{actor.name}}">
+		</div>
+		<div class="field">
+			Callsign
+			<input name="system.callsign" type="text" value="{{actor.system.callsign}}">
+		</div>
+		<div class="field">
+			Biography
+			<textarea name="system.biography">{{actor.system.biography}}</textarea>
+		</div>
+	</form>
+</div>

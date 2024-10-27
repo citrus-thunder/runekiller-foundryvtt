@@ -1,0 +1,33 @@
+{
+  "name": "runekiller-foundryvtt",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "cross-env DEBUG=true vite build",
+    "watch": "cross-env DEBUG=true vite build --watch",
+    "clean": "rm -rf ./publish",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
+    "prepublish": "npm run clean",
+    "publish": "vite build"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "@league-of-foundry-developers/foundry-vtt-types": "^9.280.1",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^22.7.9",
+    "cross-env": "^7.0.3",
+    "sass": "^1.80.4",
+    "svelte": "^5.0.3",
+    "svelte-check": "^4.0.5",
+    "tslib": "^2.8.0",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

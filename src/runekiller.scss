@@ -1,0 +1,7 @@
+// Global Styles
+@use './style/global';
+
+// temp rule, just so that we have a .css file while compiling
+.temp {
+	color: initial;
+}

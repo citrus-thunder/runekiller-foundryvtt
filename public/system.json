@@ -1,0 +1,71 @@
+{
+  "id": "runekiller",
+  "title": "Runekiller",
+  "description": "Official Foundry VTT Module for the Runekiller tabletop system by M.R. Williams",
+  "version": "1.0.0-alpha.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "authors": [
+    {
+      "name": "Max Williams",
+      "url": "http://m-r-williams.com",
+      "email": "max@welcometomonday.com",
+      "discord": "wrenchykenku"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "scripts": [
+    "main.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "socket": false,
+  "initiative": "1d20",
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
+  "url": "https://github.com/citrus-thunder/runekiller-foundryvtt",
+  "background": "systems/runekiller/assets/runekiller-splash.jpg",
+  "manifest": "https://github.com/citrus-thunder/runekiller-foundryvtt/releases/latest/download/system.json",
+  "download": "https://github.com/citrus-thunder/runekiller-foundryvtt/releases/latest/download/runekiller.json",
+  "readme": "https://github.com/citrus-thunder/runekiller-foundryvtt/blob/release/ReadMe.md",
+  "bugs": "https://github.com/citrus-thunder/runekiller-foundryvtt/issues/new/choose",
+  "changelog": "https://github.com/citrus-thunder/runekiller-foundryvtt/blob/release/ChangeLog.md",
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography"
+        ],
+        "filePathFields": {
+          "portrait": [
+            "IMAGE"
+          ]
+        }
+      },
+      "mech": {
+        "htmlFields": [
+          "biography"
+        ],
+        "filePathFields": {
+          "portrait": [
+            "IMAGE"
+          ]
+        }
+      },
+      "npc": {},
+      "npc_mech": {}
+    }
+  }
+}

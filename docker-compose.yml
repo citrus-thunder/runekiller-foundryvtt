@@ -1,0 +1,11 @@
+services:
+  runekiller-vtt:
+    build:
+      dockerfile: ./Dockerfile
+    ports: 
+      # - local-port:container-port
+      # - Foundry default port is 30000.
+      - 3000:30000
+    volumes:
+      # Dockerfile sets Foundry data directory to /app/data
+      - ./publish:/app/data/Data/systems/runekiller/
