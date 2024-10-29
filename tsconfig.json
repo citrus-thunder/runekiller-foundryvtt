@@ -29,6 +29,6 @@
       "node"
     ],
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "src/model/actor/CharacterData.ts"],
+  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "src/module/model/actor/CharacterData.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

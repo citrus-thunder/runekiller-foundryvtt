@@ -6,6 +6,7 @@ const {
 
 export default class NPCMechData extends BaseMechData {
 	static defineSchema() {
+		console.log('defining npc mech schema');
 		const baseSchema = super.defineSchema();
 		return mergeObject(baseSchema, {
 			// Data unique to NPC Mechs

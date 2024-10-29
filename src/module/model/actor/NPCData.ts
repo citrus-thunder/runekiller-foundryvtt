@@ -7,12 +7,12 @@ const {
 	HTMLField, SchemaField, NumberField, StringField, FilePathField, ArrayField
 } = foundry.data.fields;
 
-export default class CharacterData extends BaseCharacterData {
+export default class NPCData extends BaseCharacterData {
 	static defineSchema() {
+		console.log('defining npc character schema');
 		const baseSchema = super.defineSchema();
 		return mergeObject(baseSchema, {
-			// Data unique to Player Characters (PCs)
-			advancements: new NumberField(),
+			// Data unique to Non-Player Characters (NPCs)
 		}) as Object;
 	}
 }

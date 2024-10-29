@@ -1,9 +1,10 @@
 const {
-	HTMLField, BooleanField, SchemaField, NumberField, StringField, FilePathField, ArrayField
+	HTMLField, BooleanField, SchemaField, NumberField, StringField, FilePathField
 } = foundry.data.fields;
 
 export default class BaseMechData extends foundry.abstract.TypeDataModel {
 	static defineSchema(): Object {
+		console.log('defining base mech schema');
 		return {
 			// Data common to PC Mechs and NPC Mechs
 			conditions: new SchemaField({
@@ -33,8 +34,9 @@ export default class BaseMechData extends foundry.abstract.TypeDataModel {
 				min: new NumberField(),
 				max: new NumberField(),
 			}),
-			notes: new HTMLField(), // todo: add to system.json
+			notes: new HTMLField(),
 			overshield: new NumberField(),
+			portrait: new FilePathField({ required: false, categories: ["IMAGE"] }),
 			skills: new SchemaField({
 				agility: new NumberField(),
 				engineering: new NumberField(),

@@ -46,7 +46,8 @@
     "Actor": {
       "character": {
         "htmlFields": [
-          "biography"
+          "biography",
+          "notes"
         ],
         "filePathFields": {
           "portrait": [
@@ -56,7 +57,7 @@
       },
       "mech": {
         "htmlFields": [
-          "biography"
+          "notes"
         ],
         "filePathFields": {
           "portrait": [

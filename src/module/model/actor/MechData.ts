@@ -1,12 +1,13 @@
 import BaseMechData from "./BaseMechData";
 
 const {
-	HTMLField, SchemaField, NumberField, StringField, FilePathField, ArrayField
+	HTMLField, SchemaField, NumberField, StringField
 } = foundry.data.fields;
 
 export default class MechData extends BaseMechData {
 	static defineSchema(): Object {
 		const baseSchema = super.defineSchema();
+		console.log('defining player mech schema');	
 		return mergeObject(baseSchema, {
 			// Data unique to PC Mechs
 			biography: new HTMLField(), // todo: ensure in system.json
@@ -16,9 +17,9 @@ export default class MechData extends BaseMechData {
 			frame: new StringField(),
 			sp: new NumberField(),
 			repairs: new SchemaField({
-				value: 0,
-				min: 0,
-				max: 0,
+				value: new NumberField(),
+				min: new NumberField(),
+				max: new NumberField(),
 			}),
 		}) as Object;
 	}
